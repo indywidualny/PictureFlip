@@ -288,7 +288,7 @@ public class PopupActivity extends Activity implements View.OnTouchListener, Vie
         // track this action
         Bundle bundle = new Bundle();
         bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "action");
-        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "transformation");
+        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "transformation");
         mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
     }
     
@@ -323,7 +323,7 @@ public class PopupActivity extends Activity implements View.OnTouchListener, Vie
             // Track the success by Firebase Analytics.
             Bundle bundle = new Bundle();
             bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "action_success");
-            bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "Transformation passed");
+            bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "Transformation passed");
             mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
 
             setResult(Constant.ACTIVITY_POPUP_MODIFIED_RESULT);
@@ -331,7 +331,7 @@ public class PopupActivity extends Activity implements View.OnTouchListener, Vie
             // Track the failure by Firebase Analytics.
             Bundle bundle = new Bundle();
             bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "action_failure");
-            bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "Transformation failed");
+            bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "Transformation failed");
             mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
         }
         unbindService(mServiceConnection);

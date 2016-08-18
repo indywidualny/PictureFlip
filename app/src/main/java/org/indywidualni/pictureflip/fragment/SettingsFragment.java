@@ -71,13 +71,12 @@ public class SettingsFragment extends PreferenceFragment
             case "pref_disable_ads":
                 // Track it by Firebase Analytics.
                 Bundle bundle = new Bundle();
-                bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "pref_disable_ads");
                 bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "preference");
 
                 if (prefs.getBoolean("pref_disable_ads", false))
-                    bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "Disable Ads");
+                    bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "pref_disable_ads");
                 else
-                    bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "Enable Ads");
+                    bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "pref_enable_ads");
 
                 firebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
                 break;
