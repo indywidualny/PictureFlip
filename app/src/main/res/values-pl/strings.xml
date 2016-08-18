@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Odbicia lustrzane</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="horizontal_flip">Horyzontalnie</string>
+    <string name="image">Zdjęcie</string>
+    <string name="permission_storage_missing">Dostęp do plików wymagany</string>
+    <string name="retry">Ponów</string>
+    <string name="title_activity_popup">Operacje odbić</string>
+    <string name="title_activity_main">Odbicia lustrzane zdjęć</string>
+    <string name="vertical_flip">Wertykalnie</string>
+    <string name="general_settings">Główne</string>
+    <string name="loading_just_a_moment">Momencik, śmigam…</string>
+    <string name="pref_disable_ads">Wyłącz reklamy</string>
+    <string name="pref_disable_ads_summary">Za darmo. Super sprawa, nie?</string>
+    <string name="pref_rate">Oceń aplikację!</string>
+</resources>

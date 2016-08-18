@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/general_settings">
+
+        <SwitchPreference
+            android:key="pref_disable_ads"
+            android:title="@string/pref_disable_ads"
+            android:summary="@string/pref_disable_ads_summary"
+            android:defaultValue="false"/>
+
+        <Preference
+            android:key="pref_rate"
+            android:title="@string/pref_rate"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
