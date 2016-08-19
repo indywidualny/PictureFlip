@@ -57,8 +57,13 @@ public class MainFragment extends Fragment implements LoaderManager.LoaderCallba
         super.onActivityCreated(savedInstanceState);
         if (PermissionUtil.hasStoragePermission(getContext()))
             startLoader();
-        else
-            PermissionUtil.requestStoragePermission(getActivity());
+        else {
+            try {
+                // When the permission is already requested and (after recreation) it's requested
+                // again, it would lead to RuntimeException. Let's simply catch it.
+                PermissionUtil.requestStoragePermission(getActivity());
+            } catch (RuntimeException ignore) {}
+        }
     }
 
     @Override
