@@ -1,8 +1,10 @@
 ## Flip a Picture
 
+https://play.google.com/store/apps/details?id=org.indywidualni.pictureflip
+
 Most camera apps take flipped selfies. Why? Because they are supposed to look like another person was looking at you. Some people don't like it so there is a nice app to flip your selfies and all the JPG images easily.
 
-Flip a picture vertically & flip a picture horizontally
+Flip a picture vertically & flip a picture horizontally.
 
 The app keeps the quality of all the images.
 
